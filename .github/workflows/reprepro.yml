@@ -1,9 +1,14 @@
 name: Reprepro
 
-workflow_dispatch:
+on:
+  workflow_dispatch:
 
 jobs:
-   build:
-       name: install reprepro
-       runs-on: ubuntu-latest
-       run: sudo apt update && sudo apt install reprepro -y
+  build:
+    name: Install reprepro
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update package index and install reprepro
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y reprepro
