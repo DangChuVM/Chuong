@@ -1,0 +1,8 @@
+name: Reprepro
+workflow_dispatch:
+
+jobs:
+   build:
+       name: install reprepro
+       runs-on: ubuntu-latest
+       run: sudo apt update && sudo apt install reprepro -y
