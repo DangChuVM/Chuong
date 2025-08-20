@@ -1,0 +1,8 @@
+Codename: stable
+Suite: main
+Components: main
+Architectures: arm64 
+Origin: ChuongRepo
+Label: Chuong APT
+Description: Chuong APT repository
+SignWith: AD70BD5F42D81EDF460F8EA7B183BA0C6753D4DC
